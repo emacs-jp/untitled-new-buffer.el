@@ -45,6 +45,9 @@
   :group 'files
   :group 'convenience)
 
+(defcustom untitled-new-buffer-default-name "Untitled"
+  "Default BUFFER-NAME for untitled buffer.")
+
 (defcustom untitled-new-buffer-major-modes 'magic-filetype-collect-major-modes
   "Major mode candidates for create new buffer."
   :type '(choice (function          :tag "Function returns list of major-mode symbols.")
@@ -60,7 +63,7 @@
 (defun untitled-new-buffer ()
   "Create and switch to untitled buffer."
   (interactive)
-  (switch-to-buffer (generate-new-buffer "Untitled")))
+  (switch-to-buffer (generate-new-buffer untitled-new-buffer-default-name)))
 
 ;;;###autoload
 (defun untitled-new-buffer-with-select-major-mode (buffer-major-mode)
