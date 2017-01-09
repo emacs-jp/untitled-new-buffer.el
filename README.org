@@ -1,4 +1,9 @@
 * untitled-new-buffer.el
+#+BEGIN_HTML
+<a href="http://melpa.org/#/untitled-new-buffer"><img alt="MELPA untitled-new-buffer" src="http://melpa.org/packages/untitled-new-buffer-badge.svg"</a>
+<a href="http://stable.melpa.org/#/untitled-new-buffer"><img alt="MELPA stable: untitled-new-buffer" src="http://stable.melpa.org/packages/untitled-new-buffer-badge.svg"></a>
+#+END_HTML
+
 In some text editors, the new buffer has no association with the file.
 This package emulates /(unsaved)/ new buffers.
 
